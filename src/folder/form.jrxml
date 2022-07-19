@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8c21b1a2-d5fe-4e37-8959-6424aea48894">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="34"/>
+	<subDataset name="dataset1" uuid="b9620eba-f6bd-4543-b634-6dea451eee27"/>
+	<parameter name="id" class="java.lang.String"/>
+	<parameter name="contact" class="java.lang.String"/>
+	<parameter name="hometown" class="java.lang.String"/>
+	<parameter name="daejoin" class="java.lang.String"/>
+	<parameter name="status" class="java.lang.String"/>
+	<parameter name="kinName" class="java.lang.String"/>
+	<parameter name="sex" class="java.lang.String"/>
+	<parameter name="age" class="java.lang.String"/>
+	<parameter name="residence" class="java.lang.String"/>
+	<parameter name="baptise" class="java.lang.String"/>
+	<parameter name="confirm" class="java.lang.String"/>
+	<parameter name="kinNumer" class="java.lang.String"/>
+	<parameter name="user" class="java.lang.String"/>
+	<parameter name="image" class="java.lang.Object"/>
+	<parameter name="address" class="java.lang.String"/>
+	<parameter name="father_name" class="java.lang.String"/>
+	<parameter name="mother_name" class="java.lang.String"/>
+	<parameter name="girls" class="java.lang.String"/>
+	<parameter name="men" class="java.lang.String"/>
+	<parameter name="bridgade" class="java.lang.String"/>
+	<parameter name="suwma" class="java.lang.String"/>
+	<parameter name="choir" class="java.lang.String"/>
+	<parameter name="wf" class="java.lang.String"/>
+	<parameter name="guild" class="java.lang.String"/>
+	<parameter name="band" class="java.lang.String"/>
+	<parameter name="marital_status" class="java.lang.String"/>
+	<parameter name="marriage_type" class="java.lang.String"/>
+	<parameter name="spouse_name" class="java.lang.String"/>
+	<parameter name="education_level" class="java.lang.String"/>
+	<parameter name="profession" class="java.lang.String"/>
+	<parameter name="class_name" class="java.lang.String"/>
+	<parameter name="class_leader" class="java.lang.String"/>
+	<parameter name="surname" class="java.lang.String"/>
+	<parameter name="firstname" class="java.lang.String"/>
+	<parameter name="myImg" class="java.net.URL"/>
+	<parameter name="dob" class="java.lang.String"/>
+	<parameter name="position_held" class="java.lang.String"/>
+	<parameter name="position" class="java.lang.String"/>
+	<parameter name="position_duration" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select *  from member;]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="surname" class="java.lang.String"/>
+	<field name="firstname" class="java.lang.String"/>
+	<field name="gender" class="java.lang.String"/>
+	<field name="dob" class="java.sql.Date"/>
+	<field name="age" class="java.lang.String"/>
+	<field name="home_town" class="java.lang.String"/>
+	<field name="residence" class="java.lang.String"/>
+	<field name="contact" class="java.lang.String"/>
+	<field name="marital_status" class="java.lang.String"/>
+	<field name="marriage_type" class="java.lang.String"/>
+	<field name="spouse_name" class="java.lang.String"/>
+	<field name="education_level" class="java.lang.String"/>
+	<field name="profession" class="java.lang.String"/>
+	<field name="date_join" class="java.sql.Date"/>
+	<field name="baptise" class="java.lang.String"/>
+	<field name="class_name" class="java.lang.String"/>
+	<field name="class_leader" class="java.lang.String"/>
+	<field name="position_held" class="java.lang.String"/>
+	<field name="position" class="java.lang.String"/>
+	<field name="position_duration" class="java.lang.String"/>
+	<field name="address" class="java.lang.String"/>
+	<field name="father_name" class="java.lang.String"/>
+	<field name="mother_name" class="java.lang.String"/>
+	<field name="image" class="java.lang.Object"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="190" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="a1224ab3-ca73-45b9-b664-e68ecfa20048" x="100" y="19" width="298" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="20" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[THE CHURCH OF PENTECOST]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a1224ab3-ca73-45b9-b664-e68ecfa20048" x="147" y="117" width="222" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="20" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[0243918343 / 0558310103]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a1224ab3-ca73-45b9-b664-e68ecfa20048" x="149" y="82" width="231" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="20" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[P.O. BOX 66, ABUAKWA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a1224ab3-ca73-45b9-b664-e68ecfa20048" x="147" y="51" width="227" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="20" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[PARADISE ASSEMBLY]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="4222a491-50f6-4f77-aa4f-97500046c5b5" x="9" y="51" width="120" height="132"/>
+				<imageExpression><![CDATA["C:\\Users\\UMAGAGEE\\Desktop\\111aaa.jpg"]]></imageExpression>
+			</image>
+			<frame>
+				<reportElement uuid="02220c94-1d46-4307-b643-0c7331b8aadc" x="414" y="19" width="129" height="147"/>
+				<box>
+					<pen lineWidth="1.25"/>
+					<topPen lineWidth="1.25"/>
+					<leftPen lineWidth="1.25"/>
+					<bottomPen lineWidth="1.25"/>
+					<rightPen lineWidth="1.25"/>
+				</box>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="530" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="5" y="9" width="253" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Surname:....................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="247" y="41" width="34" height="27"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Sex:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="254" y="70" width="282" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Home Town:....................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="275" y="373" width="261" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Spouse Name:..........................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="2" y="131" width="245" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Residence:...................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="3" y="236" width="252" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Profession:................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="4" y="42" width="222" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Contact:.................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="2" y="72" width="239" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Address:.....................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="275" y="457" width="261" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Home cell leader:...........................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="272" y="292" width="242" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Marriage Type:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="261" y="203" width="211" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Marriage Status:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="5" y="265" width="242" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Edcation Level:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="278" y="409" width="265" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Home cell:................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="1" y="165" width="256" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Father Name:............................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="3" y="203" width="238" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Date Join:....../....../...................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="258" y="98" width="132" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Age:....................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="256" y="167" width="280" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Mother Name:..................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="357" y="503" width="186" height="27"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Signature:..........................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="262" y="131" width="68" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Baptise:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="-1" y="103" width="258" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Birthdate:......../......../..................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="267" y="9" width="276" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Firstname:.........................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="9" y="347" width="71" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Position:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="12" y="373" width="119" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Position Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="9" y="444" width="140" height="26"/>
+				<textElement>
+					<font fontName="Times New Roman" size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Position Duration:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="299" y="45" width="34" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Male]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="375" y="45" width="46" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Female]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="465" y="46" width="46" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Other]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="38" y="467" width="101" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Less than a year]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="98" y="351" width="27" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="148" y="351" width="26" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="38" y="488" width="125" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[between 1 to 3 years]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="39" y="508" width="101" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[above 3 years]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="348" y="133" width="27" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Yes]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="335" y="132" width="13" height="17"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="381" y="134" width="13" height="17"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="396" y="134" width="27" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="451" y="45" width="13" height="17"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="359" y="45" width="13" height="17"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="284" y="44" width="13" height="17"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="85" y="350" width="13" height="17"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="132" y="351" width="13" height="17"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="21" y="464" width="13" height="17"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="20" y="507" width="13" height="17"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="20" y="486" width="13" height="17"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="299" y="231" width="101" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Single]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="298" y="245" width="101" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Married]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="298" y="258" width="101" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Divorce]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="298" y="271" width="101" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Widow]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="281" y="232" width="16" height="12"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="281" y="246" width="16" height="12"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="281" y="259" width="16" height="12"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="281" y="272" width="16" height="12"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="34" y="286" width="41" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[BECE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="117" y="286" width="60" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[WASSCE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="200" y="286" width="60" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Degree]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="35" y="302" width="66" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Masters]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="118" y="302" width="36" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[PHD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="36" y="321" width="62" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Professor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="117" y="321" width="62" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Others]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="15" y="287" width="16" height="12"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="16" y="303" width="16" height="12"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="17" y="322" width="16" height="12"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="98" y="323" width="16" height="12"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="98" y="304" width="16" height="12"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="97" y="285" width="16" height="12"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="182" y="288" width="16" height="12"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="298" y="313" width="101" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Holy Matrimony]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="298" y="326" width="101" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Church Blessing]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="299" y="341" width="101" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Customary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="298" y="356" width="101" height="22"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[other]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="280" y="314" width="16" height="12"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="280" y="328" width="16" height="12"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="281" y="342" width="16" height="12"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="280" y="357" width="16" height="12"/>
+			</rectangle>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="47" y="390" width="101" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Elder]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="47" y="407" width="101" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Deacon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="029746a4-caf2-405c-b2ba-e4e812ae38dd" x="47" y="423" width="101" height="20"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Deaconers]]></text>
+			</staticText>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="28" y="391" width="16" height="12"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="28" y="408" width="16" height="12"/>
+			</rectangle>
+			<rectangle radius="10">
+				<reportElement uuid="23197168-eba8-43b7-8c30-39eb4eb4245a" x="27" y="424" width="16" height="12"/>
+			</rectangle>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="61" splitType="Stretch">
+			<textField>
+				<reportElement uuid="bbf058ce-ec3c-4c66-b2ec-6cbda00ef682" x="211" y="31" width="100" height="20"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
