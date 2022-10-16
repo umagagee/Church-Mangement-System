@@ -573,7 +573,7 @@ Statement stm=null;
         jPanel2.add(txtFirstname, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 50, 190, 30));
 
         jLabel37.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jLabel37.setText("Surname:");
+        jLabel37.setText("Lastname:");
         jPanel2.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, -1));
 
         dateJoin.setBackground(new java.awt.Color(204, 204, 204));
@@ -1403,7 +1403,7 @@ ImageIcon imageicon = new ImageIcon(new ImageIcon(image).getImage());
 param.put("image", imageicon.getImage() );
 
 
-InputStream jasperStream = getClass().getResourceAsStream("/folder/member.jasper");
+InputStream jasperStream = getClass().getResourceAsStream("/folder/member.jrxml");
 //JasperReport jr =  JasperCompileManager.compileReport(getClass().getResourceAsStream("/reports/memberReport.jrxml"));
  //JasperReport jr =  JasperCompileManager.compileReport(jd);
   JasperReport jr =  (JasperReport) JRLoader.loadObject(jasperStream);
